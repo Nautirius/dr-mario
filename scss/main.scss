@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    background: black;
+}
+
+$game-chunk-size: 2.5vw;
+
+@mixin make-square ($length) {
+    height: $length;
+    width: $length;
+}
+@mixin set-diameters ($width, $height) {
+    width: $width;
+    height: $height;
+}
+#game-container{
+    @include set-diameters (100vw, 0.6*100vw);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    #game-score-board {
+        div{
+            position: absolute;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            @include make-square(1.02*$game-chunk-size);
+        }
+        #highscore {
+            top:5*$game-chunk-size;
+            left:9*$game-chunk-size;
+        }
+        #score {
+            top:8*$game-chunk-size;
+            left:9*$game-chunk-size;
+        }
+    }
+    #game-virus-preview {
+        div {
+            @include set-diameters (4*$game-chunk-size, 3*$game-chunk-size);
+            position: absolute;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+        }
+        .v1{
+            top: 16*$game-chunk-size;
+            left: 2*$game-chunk-size; 
+        }
+        .v2{
+            top: 16*$game-chunk-size;
+            left: 2*$game-chunk-size; 
+        }
+        .v3{
+            top: 17*$game-chunk-size;
+            left: 2*$game-chunk-size; 
+        }
+        .v4{
+            top: 18*$game-chunk-size;
+            left: 3*$game-chunk-size; 
+        }
+        .v5{
+            top: 19*$game-chunk-size;
+            left: 3*$game-chunk-size; 
+        }
+        .v6{
+            top: 19*$game-chunk-size;
+            left: 4*$game-chunk-size; 
+        }
+        .v7{
+            top: 19*$game-chunk-size;
+            left: 5*$game-chunk-size; 
+        }
+        .v8{
+            top: 19*$game-chunk-size;
+            left: 6*$game-chunk-size; 
+        }
+        .v9{
+            top: 19*$game-chunk-size;
+            left: 7*$game-chunk-size; 
+        }
+        .v10{
+            top: 18*$game-chunk-size;
+            left: 8*$game-chunk-size; 
+        }
+        .v11{
+            top: 17*$game-chunk-size;
+            left: 8*$game-chunk-size; 
+        }
+        .v12{
+            top: 16*$game-chunk-size;
+            left: 8*$game-chunk-size; 
+        }
+        .v13{
+            top: 15*$game-chunk-size;
+            left: 8*$game-chunk-size; 
+        }
+        .v14{
+            top: 14*$game-chunk-size;
+            left: 7*$game-chunk-size; 
+        }
+        .v15{
+            top: 14*$game-chunk-size;
+            left: 6*$game-chunk-size; 
+        }
+        .v16{
+            top: 14*$game-chunk-size;
+            left: 5*$game-chunk-size; 
+        }
+        .v17{
+            top: 14*$game-chunk-size;
+            left: 4*$game-chunk-size;
+        }
+        .v18{
+            top: 15*$game-chunk-size;
+            left: 3*$game-chunk-size; 
+        }
+    }
+    #game-main-field {
+        position: absolute;
+        top: 15vw;
+        left: 42.5vw;
+        @include set-diameters (8*$game-chunk-size, 16*$game-chunk-size);
+        div {
+            position: absolute;
+            @include make-square($game-chunk-size);
+            font-size: 30px;
+            font-weight:bolder;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+        }
+    }
+    #game-side-field {
+        position: absolute;
+        left: 50vw;
+        @include set-diameters (12*$game-chunk-size, 8*$game-chunk-size);
+        div{
+            position: absolute;
+            @include make-square($game-chunk-size);
+            background-repeat: no-repeat !important;
+            background-size: contain !important;
+        }
+    }
+    #game-summary-board {
+        div{
+            opacity: 0;
+            position: absolute;
+            top: 21*$game-chunk-size;
+            left: 36*$game-chunk-size;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            @include make-square(1.01*$game-chunk-size);
+        }
+    }
+    #mario-loser{
+        opacity: 0;
+        position: absolute;
+        top: 3*$game-chunk-size;
+        left: 30*$game-chunk-size;
+        background-image: url("../img/mario/go_dr.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        @include set-diameters (7*$game-chunk-size, 7*$game-chunk-size);
+    }
+    #game-over {
+        opacity: 0;
+        position: absolute;
+        top: 8*$game-chunk-size;
+        left: 14*$game-chunk-size;
+        background-image: url("../img/go.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        @include set-diameters (14*$game-chunk-size, 5*$game-chunk-size);
+    }
+    #stage-completed {
+        opacity: 0;
+        position: absolute;
+        top: 8*$game-chunk-size;
+        left: 12*$game-chunk-size;
+        background-image: url("../img/sc.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        @include set-diameters (18*$game-chunk-size, 5*$game-chunk-size);
+    }
+}

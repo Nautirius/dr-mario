@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden; }
+
+body {
+  background: black; }
+
+#game-container {
+  width: 100vw;
+  height: 60vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+  #game-container #game-score-board div {
+    position: absolute;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 2.55vw;
+    width: 2.55vw; }
+  #game-container #game-score-board #highscore {
+    top: 12.5vw;
+    left: 22.5vw; }
+  #game-container #game-score-board #score {
+    top: 20vw;
+    left: 22.5vw; }
+  #game-container #game-virus-preview div {
+    width: 10vw;
+    height: 7.5vw;
+    position: absolute;
+    background-repeat: no-repeat !important;
+    background-size: cover !important; }
+  #game-container #game-virus-preview .v1 {
+    top: 40vw;
+    left: 5vw; }
+  #game-container #game-virus-preview .v2 {
+    top: 40vw;
+    left: 5vw; }
+  #game-container #game-virus-preview .v3 {
+    top: 42.5vw;
+    left: 5vw; }
+  #game-container #game-virus-preview .v4 {
+    top: 45vw;
+    left: 7.5vw; }
+  #game-container #game-virus-preview .v5 {
+    top: 47.5vw;
+    left: 7.5vw; }
+  #game-container #game-virus-preview .v6 {
+    top: 47.5vw;
+    left: 10vw; }
+  #game-container #game-virus-preview .v7 {
+    top: 47.5vw;
+    left: 12.5vw; }
+  #game-container #game-virus-preview .v8 {
+    top: 47.5vw;
+    left: 15vw; }
+  #game-container #game-virus-preview .v9 {
+    top: 47.5vw;
+    left: 17.5vw; }
+  #game-container #game-virus-preview .v10 {
+    top: 45vw;
+    left: 20vw; }
+  #game-container #game-virus-preview .v11 {
+    top: 42.5vw;
+    left: 20vw; }
+  #game-container #game-virus-preview .v12 {
+    top: 40vw;
+    left: 20vw; }
+  #game-container #game-virus-preview .v13 {
+    top: 37.5vw;
+    left: 20vw; }
+  #game-container #game-virus-preview .v14 {
+    top: 35vw;
+    left: 17.5vw; }
+  #game-container #game-virus-preview .v15 {
+    top: 35vw;
+    left: 15vw; }
+  #game-container #game-virus-preview .v16 {
+    top: 35vw;
+    left: 12.5vw; }
+  #game-container #game-virus-preview .v17 {
+    top: 35vw;
+    left: 10vw; }
+  #game-container #game-virus-preview .v18 {
+    top: 37.5vw;
+    left: 7.5vw; }
+  #game-container #game-main-field {
+    position: absolute;
+    top: 15vw;
+    left: 42.5vw;
+    width: 20vw;
+    height: 40vw; }
+    #game-container #game-main-field div {
+      position: absolute;
+      height: 2.5vw;
+      width: 2.5vw;
+      font-size: 30px;
+      font-weight: bolder;
+      background-repeat: no-repeat !important;
+      background-size: cover !important; }
+  #game-container #game-side-field {
+    position: absolute;
+    left: 50vw;
+    width: 30vw;
+    height: 20vw; }
+    #game-container #game-side-field div {
+      position: absolute;
+      height: 2.5vw;
+      width: 2.5vw;
+      background-repeat: no-repeat !important;
+      background-size: contain !important; }
+  #game-container #game-summary-board div {
+    opacity: 0;
+    position: absolute;
+    top: 52.5vw;
+    left: 90vw;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 2.525vw;
+    width: 2.525vw; }
+  #game-container #mario-loser {
+    opacity: 0;
+    position: absolute;
+    top: 7.5vw;
+    left: 75vw;
+    background-image: url("../img/mario/go_dr.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 17.5vw;
+    height: 17.5vw; }
+  #game-container #game-over {
+    opacity: 0;
+    position: absolute;
+    top: 20vw;
+    left: 35vw;
+    background-image: url("../img/go.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35vw;
+    height: 12.5vw; }
+  #game-container #stage-completed {
+    opacity: 0;
+    position: absolute;
+    top: 20vw;
+    left: 30vw;
+    background-image: url("../img/sc.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45vw;
+    height: 12.5vw; }
+
+/*# sourceMappingURL=main.css.map */
